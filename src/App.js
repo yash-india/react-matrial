@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import { CssBaseline } from '@material-ui/core'
+// import logo from './logo.svg';
+import BlogList from './pages/blogs/index';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <CssBaseline />
+      <BlogList />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
